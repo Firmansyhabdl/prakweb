@@ -65,7 +65,7 @@ if (isset($_POST['login'])) {
 			</div>
 	<br>
 	<center>
-		<p>Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a></p>
+		<p>Copyright FMJ Farma</p>
 	</center>
 		</div>
 	</form>
