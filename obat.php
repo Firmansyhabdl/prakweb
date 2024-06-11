@@ -252,7 +252,7 @@
                     </ul>
                 </nav>
                 <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Apotek Pratama</a>, Jl. Saptamarga, Kec. Botupingge, Desa Panggulo Barat.
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">FMJ FARMA</a>, Universitas Lampung
                 </p>
             </div>
         </footer>
