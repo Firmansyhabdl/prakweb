@@ -51,7 +51,7 @@ $jumlah = mysqli_fetch_assoc($res);
 <body>
 
     <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+        <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
 
             <!--
 
@@ -174,7 +174,7 @@ $jumlah = mysqli_fetch_assoc($res);
 
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="card" style="background-color: #ff4444;">
+                            <div class="card" style="background-color: #B8E1F1;">
                                 <div class="header">
                                     <h6>Stok Obat</h6>
                                     <h1 style="color: #fff;padding: 10px;">
@@ -188,7 +188,7 @@ $jumlah = mysqli_fetch_assoc($res);
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card" style="background-color: #40E0D0;">
+                            <div class="card" style="background-color:#8AA2D4;">
                                 <div class="header">
                                     <h6>Obat Terjual</h6>
                                     <h1 style="color: #fff;padding: 10px;">
@@ -203,7 +203,7 @@ $jumlah = mysqli_fetch_assoc($res);
                         </div>
 
                         <div class="col-md-3">
-                            <div class="card" style="background-color: #00ff7f;">
+                            <div class="card" style="background-color: #B8E1F1;">
                                 <div class="header">
                                     <h6>Obat Expired</h6>
                                     <h1 style="color: #fff;padding: 10px;">
@@ -220,7 +220,7 @@ $jumlah = mysqli_fetch_assoc($res);
                         </div>
                         <?php if ($_SESSION['level'] == 'admin' || $_SESSION['level'] == 'apoteker' || $_SESSION['level'] == 'pegawai') { ?>
                             <div class="col-md-3">
-                                <div class="card" style="background-color: #ffa500;">
+                                <div class="card" style="background-color: #8AA2D4;">
                                     <div class="header">
                                         <h6>Users <h1 style="color: #fff;padding: 10px;"><?= $jumlah['jumlah'] ?></h1>
                                         </h6>
