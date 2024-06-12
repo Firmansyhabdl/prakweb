@@ -48,6 +48,14 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <style>
+        .container{
+            background-color: white;
+            width: 60%;
+            padding: 20px;
+            max-width: 900px;
+        }
+    </style>
 </head>
 <body>
 
@@ -167,6 +175,7 @@
         </nav>
 
         <div class="content">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <form action="" method="post">
@@ -224,6 +233,7 @@
             </form>
                 </div>
             </div>
+        </div>
 
         <footer class="footer">
             <div class="container-fluid">
