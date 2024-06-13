@@ -29,12 +29,12 @@ if (isset($_POST['login'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Admin</title>
+    <title>Login Admin - FMJ Farma</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {
-            background: white;
+            background: #f7f7f7;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -53,14 +53,11 @@ if (isset($_POST['login'])) {
             max-width: 100%;
         }
         .login-image {
-            background: url('assets/img/login.png') no repeat center;
-            background-size: cover;
-            width: 90%;
-			height: 60%;
+            width: 50%;
+            height: auto;
         }
         .login-form {
-            padding: 0px;
-			padding-right: 20px;
+            padding: 30px;
             width: 50%;
         }
         .login-form h3 {
@@ -70,6 +67,10 @@ if (isset($_POST['login'])) {
         }
         .form-control {
             margin-bottom: 20px;
+            height: 45px;
+            border-radius: 5px;
+            box-shadow: none;
+            border: 1px solid #ddd;
         }
         .btn-primary {
             background-color: #222366;
@@ -79,9 +80,10 @@ if (isset($_POST['login'])) {
             border-radius: 5px;
             color: white;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
         .btn-primary:hover {
-            background-color: #444;
+            background-color: #1a1a56;
         }
         .form-group a {
             display: block;
@@ -92,18 +94,27 @@ if (isset($_POST['login'])) {
         .form-group a:hover {
             text-decoration: underline;
         }
+        .brand {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .brand h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #222366;
+        }
     </style>
 </head>
 <body>
-	
     <div class="container">
-	<div class="login-image">
-            <img src="assets/img/login.png" class="login-image">
-        </div>
+        <img src="assets/img/login.png" alt="Login Image" class="login-image">
         <div class="login-form">
+            <div class="brand">
+                <h1>FMJ Farma</h1>
+            </div>
             <h3 class="text-center">Login Admin</h3>
             <?php if (isset($error)) : ?>
-                <p style="color: red;font-style: italic;">Username / Password Salah!</p>
+                <p style="color: red; font-style: italic;">Username / Password Salah!</p>
             <?php endif; ?>
             <form action="" method="post">
                 <div class="form-group">
