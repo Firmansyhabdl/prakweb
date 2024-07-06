@@ -26,22 +26,19 @@ $jumlah = mysqli_fetch_assoc($res);
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-
-    <!-- Bootstrap core CSS     -->
+    <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Animation library for notifications   -->
+    <!-- Animation library for notifications -->
     <link href="assets/css/animate.min.css" rel="stylesheet" />
 
-    <!--  Light Bootstrap Table core CSS    -->
+    <!-- Light Bootstrap Table core CSS -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
 
-
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <!-- CSS for Demo Purpose, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
-
-    <!--     Fonts and icons     -->
+    <!-- Fonts and icons -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
@@ -52,13 +49,6 @@ $jumlah = mysqli_fetch_assoc($res);
 
     <div class="wrapper">
         <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
-
-            <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
 
             <div class="sidebar-wrapper">
                 <div class="logo">
@@ -120,17 +110,16 @@ $jumlah = mysqli_fetch_assoc($res);
                         <li>
                             <a href="request_obat.php">
                                 <i class="pe-7s-note2"></i>
-                                <p>Request Obat</p> <?php /// buat button print 
-                                                    ?>
+                                <p>Request Obat</p>
                             </a>
                         </li>
-                        
                     <?php } ?>
-                    <?php //if($_SESSION['level'] == 'apoteker') { 
-                    ?>
-
-                    <?php //} 
-                    ?>
+                    <li>
+                        <a href="forum.php">
+                            <i class="pe-7s-chat"></i>
+                            <p>Forum</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -167,7 +156,6 @@ $jumlah = mysqli_fetch_assoc($res);
                     </div>
                 </div>
             </nav>
-
 
             <div class="content">
                 <div class="container-fluid">
@@ -225,7 +213,6 @@ $jumlah = mysqli_fetch_assoc($res);
                                         <h6>Users <h1 style="color: #fff;padding: 10px;"><?= $jumlah['jumlah'] ?></h1>
                                         </h6>
                                     </div>
-
                                 </div>
                             </div>
                         <?php } ?>
@@ -250,20 +237,19 @@ $jumlah = mysqli_fetch_assoc($res);
         </div>
     </div>
 
-
 </body>
 
-<!--   Core JS Files   -->
+<!-- Core JS Files -->
 <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-<!--  Charts Plugin -->
+<!-- Charts Plugin -->
 <script src="assets/js/chartist.min.js"></script>
 
-<!--  Notifications Plugin    -->
+<!-- Notifications Plugin -->
 <script src="assets/js/bootstrap-notify.js"></script>
 
-<!--  Google Maps Plugin    -->
+<!-- Google Maps Plugin -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
 <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
@@ -272,9 +258,6 @@ $jumlah = mysqli_fetch_assoc($res);
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
-<?php
-
-?>
 <?php if ($_SESSION['level'] == 'apoteker') { ?>
     <script type="text/javascript">
         $(document).ready(function() {
